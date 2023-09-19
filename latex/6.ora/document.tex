@@ -1,0 +1,128 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{mathtools}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{amssymb}
+
+\begin{document}
+    \section{Bevezető}
+        \begin{enumerate}[label=(\alph*)]
+            \item Az $\frac{1}{n^2}$ sor összege
+                $$\sum_{N=1}^\infty \frac{1}{n^2} = \frac{\pi^2}{6}$$
+            \item Az $n!$ (n faktoriális) a számok szorzata 1-től n-ig, azaz
+                \begin{gather}
+                    n! := \prod_{k=1}^nk = 1 \cdot 2 \cdot \dotsc \cdot n
+                \end{gather}
+                Konvenció szeirnt $0!=1$
+            \item Legyen $0 \leq k \leq n$. A binominális együtható
+                $$\binom{n}{k} := \frac{n!}{k! \cdot (n-k)!}$$
+                Ahol a faktoriálist (\textcolor{red}{1}) szerint defeiniáljuk:
+            \item Az előjel- azaz szignum függvényt a következ®képpen definiáljuk:
+                $$sgn(x):=
+    					\left\{
+    						\begin{array}{ll}
+    							1, & \mbox{ha } x > 0\\
+    							0, & \mbox{ha } x = 1\\
+    							-1, & \mbox{ha } x < 0
+    						\end{array}
+    					\right.$$
+        \end{enumerate}
+    
+    \newpage
+    \section{Determináns}
+        \begin{enumerate}[label=(\alph*)]
+            \item Legyen
+                $$[n] := \{1,2,\dotsc,n\}$$
+                a természetes számok halmaza $1$-től $n$-ig.
+            \item Egy $n$-edrendű \textit{permutáció} $\sigma$ egy bijekció $[n]$-ből $[n]$-be. Az $[n]$-edrendű permutációk halmazát, az ún. szimetrikus csoportot, $S_n$-el jelöljük.
+            \item Egy $\sigma \in S_n$ permutációban inverziónak nevezzük egy $(i,j)$ párt, ha $i < j$, de $\sigma_i > \sigma_j$.
+            \item $\sigma \in S_n$ permutáció paritásának az inverziók számát nevezzük:
+                $$\mathcal{I}(\sigma) := \bigg|\Big\{(i,j)|(i,j) \in [n], i < j, \sigma_i > \sigma_j\Bigr\}\biggr|$$
+            \item Legyen $a \in \mathbb{R}^{n\times n}$, egy $n \times n$ (négyzetes) valós mátrix:
+                $$A=
+                    \left( 
+                        \begin{matrix}
+                            a_{11} & a_{12} & \cdots & a_{1n}\\
+                            a_{21} & a_{22} & \cdots & a_{2n}\\
+                            \vdots & \vdots & \ddots & \vdots\\
+                            a_{n1} & a_{n2} & \cdots & a_{nn}
+                        \end{matrix} 
+                    \right)$$
+                    Az $A$ mátrix determinánsát a követekzőképpen definiáljuk:
+                    \begin{gather}
+                        det(A)=
+                        \left| 
+                            \begin{matrix}
+                                a_{11} & a_{12} & \cdots & a_{1n}\\
+                                a_{21} & a_{22} & \cdots & a_{2n}\\
+                                \vdots & \vdots & \ddots & \vdots\\
+                                a_{n1} & a_{n2} & \cdots & a_{nn}
+                            \end{matrix} 
+                        \right|
+                    :=\sum_{\sigma \in S_n}(-1^{\mathcal{I}(\sigma)}) \prod_{i_1}^na_{i\sigma_i}
+                    \end{gather}
+        \end{enumerate}
+        
+    \newpage
+    \section{Logikai azonosság}
+        Tekintsük az $L = {0, 1}$ halmazt, és rajta a következő igazságtáblával definiált
+műveleteket:\\
+        \begin{center}
+            \begin{tabular}{c||c}
+                $x$ & $\Bar{x}$ \\\hline
+                0 & 1 \\
+                1 & 0
+            \end{tabular}\hspace{1cm}
+            \begin{tabular}{cc||c|c|c}
+                $x$ & $y$ & $x \vee y$ & $x \wedge y$ & $x \to y$\\\hline
+                0 & 0 & 0 & 0 & 1\\
+                0 & 1 & 1 & 0 & 1\\
+                1 & 0 & 1 & 0 & 0\\
+                1 & 1 & 1 & 1 & 1
+            \end{tabular}
+        \end{center}
+        Legyenek $a,b,c,d \in L$. Belátjuk a következő azonosságot:
+        \begin{gather}
+            (a \wedge b \wedge c) \to d = a \to (b\to(c \to d))   
+        \end{gather}
+        A következő azonosságot bizonyítás nélkül használjuk:
+        \begin{subequations}
+            \begin{equation}
+                x \to y = \Bar{x} \vee y
+            \end{equation}
+            \begin{equation}
+                \overline{x \vee y} = \Bar{x} \wedge \Bar{y} \hspace{1cm} \overline{x \wedge y} = \Bar{x} \vee \Bar{y}
+            \end{equation}
+        \end{subequations}
+        A (\textcolor{red}{3}) bal oldala, (\textcolor{red}{4}) felhasználásával
+        \begin{gather}
+            (a \wedge b \wedge c) \to d \underset{\textcolor{red}{4a}}{=} \overline{a \wedge b \wedge c} \vee d \underset{\textcolor{red}{4b}}{=} (\Bar{a} \vee \Bar{b} \vee \Bar{c}) \vee d
+        \end{gather}
+        A (\textcolor{red}{3}) jobb oldala, (\textcolor{red}{4a}) ismételt felhasználásával
+        \begin{equation}
+            \begin{gathered}
+                a \to (b \to (c \to d)) = \Bar{a} \vee (b \to (c \to d))
+                =\Bar{a} \vee (\Bar{b} \vee (c \to d))
+                =\Bar{a} \vee (\Bar{b} \vee (\Bar{c} \vee d),
+            \end{gathered}
+        \end{equation}
+        ami a $\vee$ asszociavitása miatt egyenlő (\textcolor{red}{5}) egyenlettel.
+        
+    \newpage
+    \section{Binomiális tétel}
+        \begin{subequations}
+            \begin{align}
+            (a+b)^{n+1}
+                &= (a+b) \cdot \left( \sum_{k=0}^n \binom{n}{k} a^{n-k}b^k \right)\\
+                &=\cdots\\
+                &= \sum_{k=0}^n \binom{n}{k} a^{(n+1)-k}b^k + \sum_{k=1}^{n+1} \binom{n}{k-1} a^{(n+1)-k}b^{k}\\
+                &= \cdots\\
+                &= \binom{n+1}{0} a^{n+1-0} b^0 + \sum_{k=1}^n \binom{n+1}{k} a^{(n+1)-k}b^k\\
+                &+ \binom{n+1}{n+1} a^{n+1-(n+1)} b^{n+1}\\
+                &= \sum_{k=0}^{n+1} \binom{n+1}{k} a^{(n+1)-k}b^k
+            \end{align}
+        \end{subequations}
+\end{document}

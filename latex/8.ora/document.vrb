@@ -1,0 +1,12 @@
+\frametitle{7th Frame}
+\begin{semiverbatim}
+			\textcolor{red}{\\begin\{itemize\}}
+				\textcolor{green}{\\item Item 1}
+				\textcolor{green}{\\item Item 2}
+					\textcolor{blue}{\\begin\{itemize\}}
+						\textcolor{purple}{\\item Sub Item 1}
+						\textcolor{purple}{\\item Sub Item 2}
+					\textcolor{blue}{\\end\{itemize\}}
+				\textcolor{green}{\\item Item 3}
+			\textcolor{red}{\\end\{itemize\}}
+		\end{semiverbatim}

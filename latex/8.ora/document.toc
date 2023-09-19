@@ -1,0 +1,10 @@
+\beamer@sectionintoc {1}{Exercises 1}{1}{0}{1}
+\beamer@subsectionintoc {1}{1}{Make Title}{2}{0}{1}
+\beamer@subsectionintoc {1}{2}{Frame Sub Title}{3}{0}{1}
+\beamer@subsectionintoc {1}{3}{Verbatim}{4}{0}{1}
+\beamer@subsectionintoc {1}{4}{Frame Breaks}{5}{0}{1}
+\beamer@sectionintoc {2}{Exercise 2}{9}{0}{2}
+\beamer@subsectionintoc {2}{1}{Columns}{10}{0}{2}
+\beamer@subsectionintoc {2}{2}{Blocks}{11}{0}{2}
+\beamer@subsectionintoc {2}{3}{Theorem}{14}{0}{2}
+\beamer@subsectionintoc {2}{4}{Semiverbatim}{16}{0}{2}

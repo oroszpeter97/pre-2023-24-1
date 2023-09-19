@@ -1,0 +1,31 @@
+\documentclass[10pt]{article}
+
+%PACKAGES
+\usepackage{fancyhdr}
+\usepackage{geometry}
+
+%TITLE PAGE
+\author{Orosz Péter}
+\title{Default}
+
+%DOCUMENT SETTINGS
+\geometry{margin=3cm}
+\geometry{headheight=15pt}
+%FANCYHDR
+\pagestyle{fancy}
+\fancyfoot[C]{University of Miskolc}
+\fancyhead[R]{\thepage}
+\renewcommand{\footrulewidth}{0.2pt}
+\fancyhead[L]{\leftmark}
+\fancypagestyle{plain}{%
+	\fancyhf{}%
+	\fancyhead[R]{\thepage}%
+}
+
+%DOCUMENT
+\begin{document}
+	\pagenumbering{roman}
+	\maketitle \newpage
+	\tableofcontents \newpage \pagenumbering{arabic}
+	\section{Introduction}
+\end{document}

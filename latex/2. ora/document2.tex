@@ -1,0 +1,70 @@
+\documentclass[twocolumn]{article}
+
+\usepackage{lipsum}
+\usepackage{babel}
+\usepackage{xcolor}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+
+\title{2. Óra}
+\author{Orosz Péter}
+
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{5}
+\pagenumbering{roman}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\geometry{margin=3cm}
+\geometry{outer=5cm}
+\geometry{bindingoffset=1cm}
+\geometry{marginparwidth=3cm}
+\geometry{marginparsep=0.5cm}
+\geometry{columnsep=1cm}
+\pagestyle{headings}
+
+\begin{document}
+	\maketitle
+	\begin{abstract}
+		 \lipsum[1]
+		 \footnote{\lipsum[1]}
+	\end{abstract}
+	\tableofcontents
+	\newpage
+	\pagenumbering{arabic}
+	\section[Fs]{First section\footnote{\lipsum[1]}}
+		\marginpar{\lipsum[1]}
+		\subsection{This is a subsection}
+			\lipsum[2-3]
+	\section{Second section}
+		\subsection{Quote, quotation subsection}
+			\lipsum[1]
+			\begin{quote}
+				\lipsum[1]
+			\end{quote}
+			\lipsum[1]
+			\begin{quotation}
+				\lipsum[1]
+			\end{quotation}
+			\subsubsection{This is a subsubsection}
+				\paragraph{This is a paragraph}
+					\subparagraph{This is a subparagraph}
+		\marginpar{\lipsum[1]}
+		\subsection{Verse subsection}
+			\begin{verse}
+				\lipsum[1]\\
+				\lipsum[1]
+			\end{verse}
+	\newpage
+	\appendix
+	\section{Appendix section}
+		\subsection{Appendix subsection}
+			\lipsum[1]
+		\subsection{Appendix subsection}ű
+			\lipsum[1]
+	\section{Appendix section}
+		\subsection{Appendix subsection}
+			\lipsum[1]
+		\subsection{Appendix subsection}
+			\lipsum[1]
+			
+\end{document}

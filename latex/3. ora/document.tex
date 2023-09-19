@@ -1,0 +1,114 @@
+\documentclass{article}
+
+\usepackage[inline]{enumitem}
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{lipsum}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{colortbl}
+\usepackage{caption}
+\usepackage{subcaption}
+
+\renewlist{enumerate}{enumerate}{5}
+\setlist[enumerate,1]{label=\arabic*}
+\setlist[enumerate,2]{label=\Roman*}
+\setlist[enumerate,3]{label=\roman*}
+\setlist[enumerate,4]{label=\Alph*}
+\setlist[enumerate,5]{label=\alph*}
+
+\begin{document}
+	\section{Feladat}
+		\begin{itemize*}[itemjoin*={\hspace{1em}and }]
+			\item[*] First Item
+			\item[*] Second Item
+			\item[*] Third Item
+		\end{itemize*}
+	
+	\listoffigures
+	\listoftables
+	
+	\section{Feladat}
+		\begin{enumerate}
+			\item First Item
+				\label{first_item_label}
+			\item Second Item
+				\begin{enumerate}[label=\Roman*]
+					\item First SubItem
+						\begin{enumerate}
+							\item First SubSubItem
+								\begin{enumerate}
+									\item First SubSubSubItem
+										\begin{enumerate}
+											\item asd
+										\end{enumerate}
+								\end{enumerate}
+						\end{enumerate}
+				\end{enumerate}
+			\item[*] Third Item
+				\label{unnumbered_item_label}
+		\end{enumerate}
+		
+		\lipsum[3]
+		
+		\begin{enumerate}[resume]
+			\item Item Continuation
+		\end{enumerate}
+		\ref{first_item_label}\\
+		\ref{unnumbered_item_label}
+		
+	\section{Feladat}
+		\begin{description}[style=nextline]
+			\item[]\lipsum[1]
+			\item[Description List]\lipsum[1]
+			\item[wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww] \lipsum[1]
+		\end{description}
+	
+	\section{Feladat}
+		\includegraphics[height=5cm]{image1.png}
+		
+		\lipsum[1]\\
+		\begin{figure}
+			\label{figure_label}
+			\begin{subfigure}{5cm}
+				\label{fig:subfig1}
+				\centering
+				\caption{Test Image}
+				\includegraphics[height=5cm]{image1.png}
+			\end{subfigure}\\
+			\begin{subfigure}{5cm}
+				\label{fig:subfig2}
+				\centering
+				\caption{Test Image 2}
+				\includegraphics[height=5cm, width=-5cm]{image1.png}
+			\end{subfigure}
+		\end{figure}
+		\lipsum[1]
+		\subref{figure_label}
+		
+	 \section{Feladat}
+	 	\begin{tabular}{p{3em}||lll|}
+	 		 & egy & kettő & három\\ \hline\hline
+	 		Helló Világ! & négy & öt & hat\\ \cline{2-4}
+	 		 & hét & nyolc & kilenc\\ \cline{2-2} \cline{4-4}
+	 		 lórum ipse & tíz & & tizenkettő\\\hline 
+	 	\end{tabular}
+ 		\\\\\\
+ 		\begin{tabular}{l|ll|}
+ 			egy & \multicolumn{2}{c|}{kettő}\\ \hline
+ 			\multirow{2}{2em}{négy} & \multicolumn{1}{c|}{öt} & hat\\ \cline{2-3}
+ 			& \multicolumn{2}{c|}{\multirow{2}{*}{nyolc}} \\ \cline{1-1}
+ 			tíz &  & \\\hline
+ 		\end{tabular}
+ 		\\\\\\
+ 		\rowcolors{1}{yellow!20}{blue!20}
+ 		\begin{tabular}{l|l|l}
+ 			egy & kettő & három\\ \hline
+ 			négy & öt & hat\\ 
+ 			hét & nyolc & kilenc\\ 
+ 			tíz & tizenegy & tizenkettő\\
+ 		\end{tabular}
+\end{document}

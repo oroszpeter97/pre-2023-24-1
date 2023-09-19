@@ -1,0 +1,5 @@
+\beamer@sectionintoc {1}{Mi az a multiverzum?}{3}{0}{1}
+\beamer@sectionintoc {2}{Bizonyíték a multiverzumra}{7}{0}{2}
+\beamer@sectionintoc {3}{Fizikai bizonyíték}{12}{0}{3}
+\beamer@sectionintoc {4}{Doppelgängers}{14}{0}{4}
+\beamer@sectionintoc {5}{Multiverzum típusai}{18}{0}{5}

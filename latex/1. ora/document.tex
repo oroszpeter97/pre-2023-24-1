@@ -1,0 +1,50 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[english,magyar]{babel}
+\usepackage{t1enc}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{lipsum}
+\usepackage{hulipsum}
+\usepackage{blindtext}
+
+\frenchspacing
+
+\title{1. óra}
+\author{Orosz Péter}
+\date{\today}
+
+\begin{document}
+	\maketitle
+	\section{Feladat 2}
+		\textit{Dőlt betü}\\
+		\texttt{Typewriter}\\
+		\textbf{Vastag Betü}\\
+		\textsc{Kis kapitális}\\
+		\textsc{Slanted}\\
+		\textsf{Sans Sherif}\\
+		\textit{Dőlt \emph{betü} emph}\\
+		\textbf{Vastag \emph{betü} emph}\\
+		\textsc{Kis \emph{kapitalis} emph}
+		
+	\section{Feladat 3}
+		\fcolorbox{blue}{white}{\reflectbox{{Függőleges tükrözés}}}\\
+		\scalebox{-1.0}{\scalebox{2.0}{Vízszintes tükrözés}}\\
+		\rotatebox{90}{90-es forgatás}\\
+		\rotatebox{270}{270-es forgatás}\\
+		\colorbox{black}{\textcolor{white}{Fehér betü fekete hátteren}}\\
+		\fcolorbox{red}{white}{\textcolor{red}{Piros szöveg piros kerettel}}
+	
+	\pagebreak
+	\section{Feladat 4}
+		\subsection{lipsum}
+			\textbf{\lipsum[1]}
+		\subsection{hulipsum}
+			\begin{flushright}
+				\hulipsum[1]
+			\end{flushright}
+		\subsection{blind text}
+			\linespread{2}
+			\selectfont
+			\blindtext[1]
+\end{document}

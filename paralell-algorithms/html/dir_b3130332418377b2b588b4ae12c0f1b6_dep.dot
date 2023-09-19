@@ -1,0 +1,13 @@
+digraph "3-gyakorlat" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_b3130332418377b2b588b4ae12c0f1b6 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_b3130332418377b2b588b4ae12c0f1b6.html"];
+    dir_b3130332418377b2b588b4ae12c0f1b6 [shape=plaintext label="3-gyakorlat"];
+  dir_02d8a999f768dc542e2c4271143683ac [shape=box label="1-feladat" fillcolor="white" style="filled" URL="dir_02d8a999f768dc542e2c4271143683ac.html"];
+  dir_909595deab43034c4e49db08e7af0626 [shape=box label="POSIX" fillcolor="white" style="filled" color="red" URL="dir_909595deab43034c4e49db08e7af0626.html"];
+  }
+  dir_1c682552315ab0837e088364558ee24c [shape=box label="helper-libraries" URL="dir_1c682552315ab0837e088364558ee24c.html"];
+  dir_909595deab43034c4e49db08e7af0626->dir_1c682552315ab0837e088364558ee24c [headlabel="1", labeldistance=1.5 headhref="dir_000005_000019.html"];
+}

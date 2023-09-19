@@ -1,0 +1,11 @@
+digraph "1-gyakorlat/8-feladat" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_c0c31e35fdd7e7a0526e943100458dd1 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="1-gyakorlat" fontname="Helvetica", fontsize="10", URL="dir_c0c31e35fdd7e7a0526e943100458dd1.html"]
+  dir_9c3d79fd0dc1512dd6f0c27bdca0ad82 [shape=box, label="8-feladat", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_9c3d79fd0dc1512dd6f0c27bdca0ad82.html"];
+  }
+  dir_1c682552315ab0837e088364558ee24c [shape=box label="helper-libraries" URL="dir_1c682552315ab0837e088364558ee24c.html"];
+  dir_9c3d79fd0dc1512dd6f0c27bdca0ad82->dir_1c682552315ab0837e088364558ee24c [headlabel="1", labeldistance=1.5 headhref="dir_000012_000019.html"];
+}

@@ -1,0 +1,11 @@
+digraph "3-gyakorlat/POSIX/3-feladat" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_909595deab43034c4e49db08e7af0626 {
+    graph [ bgcolor="#ddddee", pencolor="black", label="POSIX" fontname="Helvetica", fontsize="10", URL="dir_909595deab43034c4e49db08e7af0626.html"]
+  dir_44e4fa95e69832de44ccba96b2b3e20e [shape=box, label="3-feladat", style="filled", fillcolor="#eeeeff", pencolor="black", URL="dir_44e4fa95e69832de44ccba96b2b3e20e.html"];
+  }
+  dir_1c682552315ab0837e088364558ee24c [shape=box label="helper-libraries" URL="dir_1c682552315ab0837e088364558ee24c.html"];
+  dir_44e4fa95e69832de44ccba96b2b3e20e->dir_1c682552315ab0837e088364558ee24c [headlabel="1", labeldistance=1.5 headhref="dir_000006_000019.html"];
+}

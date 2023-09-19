@@ -1,0 +1,11 @@
+digraph "semester-assigment" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_6e34ffa04e056b4897e4acd25082fe41 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_6e34ffa04e056b4897e4acd25082fe41.html"];
+    dir_6e34ffa04e056b4897e4acd25082fe41 [shape=plaintext label="semester-assigment"];
+  dir_47701f2e53e0cd8e38726bf7f628f3cc [shape=box label="helper-libraries" fillcolor="white" style="filled" URL="dir_47701f2e53e0cd8e38726bf7f628f3cc.html"];
+  }
+  dir_6e34ffa04e056b4897e4acd25082fe41->dir_47701f2e53e0cd8e38726bf7f628f3cc [headlabel="4", labeldistance=1.5 headhref="dir_000020_000021.html"];
+}

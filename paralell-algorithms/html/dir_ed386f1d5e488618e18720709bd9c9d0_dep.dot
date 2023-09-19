@@ -1,0 +1,14 @@
+digraph "2-gyakorlat" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_ed386f1d5e488618e18720709bd9c9d0 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_ed386f1d5e488618e18720709bd9c9d0.html"];
+    dir_ed386f1d5e488618e18720709bd9c9d0 [shape=plaintext label="2-gyakorlat"];
+  dir_c3a8ec06b48c178d3e1ffb85ebbe711c [shape=box label="1-feladat" fillcolor="white" style="filled" URL="dir_c3a8ec06b48c178d3e1ffb85ebbe711c.html"];
+  dir_9f0c0857f1b1480d6c3be47f50f16424 [shape=box label="2-feladat" fillcolor="white" style="filled" URL="dir_9f0c0857f1b1480d6c3be47f50f16424.html"];
+  dir_8cde84eebf4bf68ad441c1edd5d95929 [shape=box label="3-feladat" fillcolor="white" style="filled" URL="dir_8cde84eebf4bf68ad441c1edd5d95929.html"];
+  }
+  dir_1c682552315ab0837e088364558ee24c [shape=box label="helper-libraries" URL="dir_1c682552315ab0837e088364558ee24c.html"];
+  dir_c3a8ec06b48c178d3e1ffb85ebbe711c->dir_1c682552315ab0837e088364558ee24c [headlabel="1", labeldistance=1.5 headhref="dir_000014_000019.html"];
+}

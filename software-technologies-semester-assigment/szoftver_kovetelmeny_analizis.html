@@ -1,0 +1,844 @@
+<html style="direction: ltr;">
+
+<head>
+    <title>Szoftver Követelmény Analízis</title>
+    <style>
+        <!--
+        @page {
+            margin: 2.5cm
+        }
+
+        P {
+            margin-bottom: 0.21cm
+        }
+
+        TD P {
+            margin-bottom: 0.21cm
+        }
+        -->
+    </style>
+</head>
+<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'>
+
+<body>
+    <p style="margin-bottom: 0cm;" align="center"><br></p>
+    <p style="margin-bottom: 0cm;" lang="hu-HU" align="left">
+        <font style="font-size: 22pt;" size="6">Csoport neve: Team Cherry</font>
+    </p>
+    <p style="margin-bottom: 0cm;" align="left">
+        <font style="font-size: 22pt;" size="6">Feladat sorszáma: SORSZÁM</font>
+    </p>
+    <p style="margin-bottom: 0cm;" align="left">
+        <font style="font-size: 22pt;" size="6">Feladat címe: 2D Rogue-Like</font>
+    </p>
+    <p style="margin-bottom: 0cm;" align="center"><br></p>
+    <p style="margin-bottom: 0cm;" align="center"><br></p>
+    <p style="margin-bottom: 0cm;" align="center"><br></p>
+    <p style="margin-bottom: 0cm;" align="center"><br></p>
+    <p style="margin-bottom: 0cm;" align="center"><br></p>
+    <p style="margin-bottom: 0cm;" lang="hu-HU" align="center">
+        <font style="font-size: 26pt;" size="6"><b><span lang="en-US">Szoftver Követelmény Analízis</b></font>
+    </p>
+    <p style="margin-bottom: 0cm;" align="center"><br></p>
+    <p style="margin-bottom: 0cm;" align="center"><br></p>
+    <p style="margin-bottom: 0cm;" align="center"><br></p>
+    <p style="margin-bottom: 0cm;" lang="hu-HU" align="center">
+        <font size="4">Gyakorlatvezető::</font>
+    </p>
+    <p style="margin-bottom: 0cm;" lang="hu-HU" align="center">
+        <font style="font-size: 22pt;" size="6">Árvai László</font>
+    </p>
+    <p style="margin-bottom: 0cm;" align="center"><br></p>
+    <p style="margin-bottom: 0cm;" lang="hu-HU" align="left">
+        <font style="font-size: 16pt;" size="4">Csoport tagok:</font>
+    </p>
+    <p style="margin-bottom: 0cm;" align="left"><br></p>
+
+    <table width="90%" cellspacing="3" cellpadding="4" border="1">
+        <colgroup>
+            <col width="150">
+            <col width="75">
+            <col width="264">
+        </colgroup>
+        <tbody>
+            <tr valign="top">
+                <td width="118">
+                    <p lang="hu-HU" align="left">
+                        <font size="3">Orosz Péter (Csapatvezető)</font>
+                    </p>
+                </td>
+                <td width="75">
+                    <p lang="hu-HU" align="left">
+                        <font size="3">WO02D7</font>
+                    </p>
+                </td>
+                <td width="264">
+                    <p lang="hu-HU" align="left">
+                        <font size="3">oroszpeter97@gmail.com</font>
+                    </p>
+                </td>
+            </tr>
+
+            <tr valign="top">
+                <td width="118">
+                    <p lang="hu-HU" align="left">
+                        <font size="3">Dobai Attila</font>
+                    </p>
+                </td>
+                <td width="75">
+                    <p lang="hu-HU" align="left">
+                        <font size="3">DIZ4VX</font>
+                    </p>
+                </td>
+                <td width="264">
+                    <p lang="hu-HU" align="left">
+                        <font size="3">readywer136@gmail.com</font>
+                    </p>
+                </td>
+            </tr>
+
+            <tr valign="top">
+                <td width="118">
+                    <p lang="hu-HU" align="left">
+                        <font size="3">Drahos Alinka</font>
+                    </p>
+                </td>
+                <td width="75">
+                    <p lang="hu-HU" align="left">
+                        <font size="3">EG55OI</font>
+                    </p>
+                </td>
+                <td width="264">
+                    <p lang="hu-HU" align="left">
+                        <font size="3">drahosalinka@freemail.hu</font>
+                    </p>
+                </td>
+            </tr>
+
+            <tr valign="top">
+                <td width="118">
+                    <p lang="hu-HU" align="left">
+                        <font size="3">Tőzsér Zétény</font>
+                    </p>
+                </td>
+                <td width="75">
+                    <p lang="hu-HU" align="left">
+                        <font size="3">QGNLD2</font>
+                    </p>
+                </td>
+                <td width="264">
+                    <p lang="hu-HU" align="left">
+                        <font size="3">tozserzeteny@gmail.com</font>
+                    </p>
+                </td>
+            </tr>
+
+            <tr valign="top">
+                <td width="118">
+                    <p lang="hu-HU" align="left">
+                        <font size="3">Gáncsos Dániel</font>
+                    </p>
+                </td>
+                <td width="75">
+                    <p lang="hu-HU" align="left">
+                        <font size="3">VS8KWD</font>
+                    </p>
+                </td>
+                <td width="264">
+                    <p lang="hu-HU" align="left">
+                        <font size="3">channeltaury@gmail.com</font>
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p style="margin-bottom: 0cm;" align="left"><br></p>
+    <p style="margin-bottom: 0cm;" lang="hu-HU" align="right">
+        <font size="4">2022.09.22</font>
+    </p>
+    <p style="margin-bottom: 0cm;" align="center"><br></p>
+
+    <p style="margin-bottom: 0cm;"><br>
+
+    </p>
+
+    <p style="margin-bottom: 0cm; page-break-before: always;"><br>
+
+    </p>
+
+    <p style="margin-bottom: 0cm;" align="center"><b>Történet</b></p>
+
+    <p style="margin-bottom: 0cm;"><br>
+
+    </p>
+
+    <table width="1310" cellspacing="0" cellpadding="4" bordercolor="#000000" border="1">
+
+        <colgroup>
+            <col width="100">
+            <col width="60">
+            <col width="1000">
+            <col width="150">
+        </colgroup>
+        <thead>
+            <tr valign="top">
+
+                <th width="86">
+
+                    <p>Dátum</p>
+
+                </th>
+
+                <th width="57">
+
+                    <p>Verzió</p>
+
+                </th>
+
+                <th width="314">
+
+                    <p>Leírás</p>
+
+                </th>
+
+                <th width="152">
+
+                    <p>Szerző</p>
+
+                </th>
+
+            </tr>
+
+        </thead>
+        <tbody>
+
+            <tr valign="top">
+
+                <td sdnum="1038;0;@" width="86">
+
+                    <p align="left"><br>
+                        2022.10.02.
+                    </p>
+
+                </td>
+
+                <td sdnum="1038;0;@" width="57">
+
+                    <p><br>
+                        0.1
+                    </p>
+
+                </td>
+
+                <td sdnum="1038;0;@" width="314">
+
+                    <p><br>
+                        A dokumentum kidolgozatlan vázlata.
+                    </p>
+
+                </td>
+
+                <td sdnum="1038;0;@" width="152">
+
+                    <p><br>
+                        Orosz Péter
+                    </p>
+
+                </td>
+
+            </tr>
+
+            <tr valign="top">
+
+                <td sdnum="1038;0;@" width="86">
+
+                    <p><br>
+
+                    </p>
+
+                </td>
+
+                <td sdnum="1038;0;@" width="57">
+
+                    <p><br>
+
+                    </p>
+
+                </td>
+
+                <td sdnum="1038;0;@" width="314">
+
+                    <p><br>
+
+                    </p>
+
+                </td>
+
+                <td sdnum="1038;0;@" width="152">
+
+                    <p><br>
+
+                    </p>
+
+                </td>
+
+            </tr>
+
+            <tr valign="top">
+
+                <td sdnum="1038;0;@" width="86">
+
+                    <p><br>
+
+                    </p>
+
+                </td>
+
+                <td sdnum="1038;0;@" width="57">
+
+                    <p><br>
+
+                    </p>
+
+                </td>
+
+                <td sdnum="1038;0;@" width="314">
+
+                    <p><br>
+
+                    </p>
+
+                </td>
+
+                <td sdnum="1038;0;@" width="152">
+
+                    <p><br>
+
+                    </p>
+
+                </td>
+
+            </tr>
+
+
+        </tbody>
+    </table>
+
+    <p><br>
+        <br>
+
+    </p>
+
+    <p><br>
+        <br>
+
+    </p>
+
+    <p><b>A lenti tartalomjegyzék az aktuális tartalomnak megfelelően
+            módosítandó!</b></p>
+
+    <p><b>Tartalomjegyzék</b></p>
+
+    <p style="margin-bottom: 0cm;"><a href="#1.+Bevezet%C3%A9s%7Coutline">1.
+            Bevezetés</a></p>
+
+    <p style="margin-bottom: 0cm;"><a href="#2.+%C3%81ttekint%C3%A9s%7Coutline">2.
+            Áttekintés</a></p>
+
+    <p style="margin-bottom: 0cm;"><a href="#3.+A+rendszer+funkci%C3%B3i%7Coutline">3.
+            A rendszer funkciói</a></p>
+
+    <p style="margin-left: 0.48cm; margin-bottom: 0cm;"><a href="#3.1.+Els%C5%91+k%C3%B6vetelm%C3%A9ny%7Coutline">3.1
+            Első követelmény</a></p>
+
+    <p style="margin-bottom: 0cm;"><a href="#4.+Haszn%C3%A1lhat%C3%B3s%C3%A1g%7Coutline">4.
+            Használhatóság</a></p>
+
+    <p style="margin-bottom: 0cm;"><a href="#5.+Megb%C3%ADzhat%C3%B3s%C3%A1g%7Coutline">5.
+            Megbízhatóság</a></p>
+
+    <p style="margin-bottom: 0cm;"><a href="#6.+Teljes%C3%ADtm%C3%A9ny%7Coutline">6.
+            Teljesítmény</a></p>
+
+    <p style="margin-bottom: 0cm;"><a href="#7.+T%C3%A1mogatotts%C3%A1g%7Coutline">7.
+            Támogatottság</a></p>
+
+    <p style="margin-bottom: 0cm;"><a href="#8.+Tervez%C3%A9si+korl%C3%A1toz%C3%A1sok%7Coutline">8.
+            Tervezési korlátozások</a></p>
+
+    <p style="margin-bottom: 0cm;"><a href="#10.+Felhaszn%C3%A1lt+k%C3%A9sz+komponensek%7Coutline">9.
+            Felhasznált kész komponensek</a></p>
+
+    <p style="margin-bottom: 0cm;"><a href="#11.+Interf%C3%A9szek%7Coutline">10.
+            Interfészek</a></p>
+
+    <p style="margin-left: 0.5cm; margin-bottom: 0cm;">10.1. Felhasználói
+        interfészek</p>
+
+    <p style="margin-left: 0.5cm; margin-bottom: 0cm;">10.2. Hardware
+        interfészek</p>
+
+    <p style="margin-left: 0.5cm; margin-bottom: 0cm;">10.3. Software
+        interfészek</p>
+
+    <p style="margin-left: 0.5cm; margin-bottom: 0cm;">10.3. Kommunikációs
+        interfészek</p>
+
+    <p style="margin-bottom: 0cm;"><a href="#12.+Alkalmazott+szabv%C3%A1nyok%7Coutline">11.
+            Alkalmazott szabványok</a></p>
+
+    <p style="margin-left: 0.5cm; margin-bottom: 0cm;">11.1. Kötelezően
+        alkalmazandó szabványok</p>
+
+    <p style="margin-left: 0.5cm; margin-bottom: 0cm;">11.2. Választás
+        alapján alkalmazott szabványok</p>
+
+    <p style="margin-bottom: 0cm;"><a href="#13.+Mell%C3%A9kletek%7Coutline">12.
+            Mellékletek</a></p>
+
+    <p><br>
+        <br>
+
+    </p>
+
+    <h1 class="western"><a name="1. Bevezetés|outline"></a>1. Bevezetés</h1>
+
+    <p>
+        <font face="Arial, sans-serif">Introduction</font>
+    </p>
+
+    <p style="margin-bottom: 0cm;"><br>
+
+    </p>
+
+    <h1 class="western"><a name="2. Áttekintés|outline"></a>2. Áttekintés</h1>
+
+    <ul>
+        <p>Ebben a dokumentumban a kovetkező témákat fogjuk kifejteni alaposabban:</p>
+        <li>
+            <p>Legfontosabb funkciók: A játkos interakció a játékkal use-case diagarmmokal.</p>
+
+        </li>
+        <li>
+            <p>A felhasználók jellemzői: Milyen típusú embereket céloz meg ez a játék.</p>
+
+        </li>
+        <li>
+            <p>Korlátozások: Fejlesztési korlátok.</p>
+
+        </li>
+        <li>
+            <p>Feltételezések és függőségek</p>
+
+        </li>
+        <li>
+            <p>A követelmények csoportosításának szempontjai.</p>
+
+        </li>
+    </ul>
+
+    <p><br>
+        <br>
+
+    </p>
+
+    <h1 class="western"><a name="3. A rendszer funkciói|outline"></a>3. A
+        rendszer funkciói</h1>
+        A következő interakciók mindenegyes esetben hiba nélkül kell működnie a programfutása alatt. Ezek a fő interakciók ami irányítani fogja a felhasználót a program futása alatt.
+        <h2>Játékos - Tárhely Interakció</h2>
+        <img src="jatekos-tarhely.jpg" alt="jatekos-menu">
+        <br>A játékos és a tárhely közöztti interakciót a mentett állások menü opció fogja kezeleni. Ez fogja dekódolni a lemezre mentett json fájlt hogy be tudja tölteni a játékot.
+
+        <h2>Játékos - Boltos Interakció</h2>
+        <img src="jatekos-boltos.jpg" alt="jatekos-menu">
+        <br>A boltos nagy szerepet fog játszani a játékban. Nála lesz lehetőség egyedi fegyvereket és képességeket vásárolni amit máshol a játékban nem leheetlesz megtalálni. A boltosnál lehetlesz, magákat a nem kívánt fegyvereket<br>
+        is eladni és a játék során megszerezhető "relic"-eket amik csak azt célt szolgálják hogy eladás után pénzhez jusson a játékos.
+        
+        <h2>Játékos - Ellenfél Interakció</h2>
+        <img src="jatekos-ellenfel.jpg" alt="jatekos-menu">
+        <br>Az ellenfelekkel a játékos főként támadás és debuff szempontjából fog interaktálni. Mind a játékos és ellenfél fognak létrehozni egyedi támadásokat, amit a jelenlegi fegyverük fog kontrollálni, amik<br>
+        ha eltalálják a célpontjukat, megfogják hívni a sebzdőés függvényt a játékos, vagy ellenfélnél0.21cm
+        
+        <h2>Tutoriál allatt az ellenfelek.</h2>
+        Amikor a tutoriál pályát játsza a játékos az ellenfelek le vannak butitva. A pontosságuk és sebzésük lecsökkentve, ezzel időt adva a játékosnak hogy megismerje a játék alapvető funkcióit.<br>
+        A játékos a tutorialban nem fog tudni meghalni, mikor leesne az életereje nullára. mindig felugrik maximumra. 
+
+    <p><br>
+        <br>
+
+    </p>
+
+    <h1 class="western"><a name="4. Használhatóság|outline"></a>4.
+        Használhatóság</h1>
+
+    <ul>
+
+        <li>
+            <p>Egy videójátékokhoz nem szokott személynek fél órára lehet szüksége, hogy kellően elsajátítsa a játék vezérlését.
+                Ebben segít a könnyű nehézségi fokozat, új játék kezdésekor.
+            Egy tapasztalt játékos pár perc után eligazodik majd. 
+                A játék során folyamatosan találkozik majd a játékos új ellenfelekkel, fegyverekkel és képességekkel. </p>
+
+        </li>
+        <li>
+            <p>A játék kézzel készített bevezető pályákkal kezdődik, amelyek úgy lettek tervezve, hogy minden szükséges dolgot megtanítsanak az új játékosnak. 
+            Írott segítséget is tartalmaz a játék, ami gyorsan emlékeztethet valakit egy-egy dologról.</p>
+
+        </li>
+        <li>
+            <p>A felhasználói felület hasonló a legtöbb játékhoz saját műfajában. 
+                Tapasztalt játékosoknak könnyű lesz átálni rá. 
+            A gombokat szabadon át lehet állítani, így részlegesen mindenki személyre szabhatja.</p>
+
+        </li>
+        <li>
+            A játék színvakok számára is tökéletesen játszható lesz. 
+            Szükség esetén külön színvak móddal.
+        </li>
+    </ul>
+
+    <p><br>
+        <br>
+
+    </p>
+
+    <p><br>
+        <br>
+
+    </p>
+
+    <h1 class="western"><a name="5. Megbízhatóság|outline"></a>5.
+        Megbízhatóság</h1>
+
+    <p>
+        <font face="Arial, sans-serif">Reliability</font>
+    </p>
+
+    <p>A rendszerrel szemben támasztott megbízhatósági követelmények.
+        (Minden követelmény egy alpontban.) Ilyenek lehetnek például:</p>
+
+    <ul>
+
+        <li>
+            <p>rendelkezésre állás (pl. %-ban): teljes használhatóság,
+                karbantartási idő, korlátozott használhatóság,</p>
+
+        </li>
+        <li>
+            <p>MTBF: (Mean Time Between Failures): hibák között eltelt
+                átlagos idő,</p>
+
+        </li>
+        <li>
+            <p>MTTR: (Man Time To Repair): egy hiba utáni javítás átlagos
+                ideje,</p>
+
+        </li>
+        <li>
+            <p>A rendszer eredményeinek pontossága, felbontása (ha
+                értelmezhető).</p>
+
+        </li>
+    </ul>
+    
+    A Játék csupán teljes körű tesztelés után fog piacra kerülni és a fejlesztő vállalja hogy a hibákat a lehető leggyorsabban hárítja el. A játékba épített hibabejelentő funkció is azt a célt szolgálja, hogy fejlesztőink minél hamarabb tudomást szerezhessenek az előforduló hibákról és azokat javíthassák. <br>
+    A hiba javítása a hiba természetétől függ, de csapatunk garanciát vállal a hibák minél előbbi elhárítására és ha esetlegesen az eéhúzódna, akkor a játékosok kárpótlására játékbeli jutalmakkal. <br>
+    A hibák javítását frissítésekben fogjuk közölni, nem fog karbantartás miatt megállni/játszhatatlanná válni a játék. <br>
+    A DEMO verzió ingyenesen elérhető lesz, hogy leendő játékosaink kipróbálhassák játékunkat és megtapasztalhassák a játékélményt. A DEMO verzió tartalmazni fogja a játék alapvető mechanikáit és minél jobban megpróbálja majd bemutatni a játék élményt csökkentett lehetőségekkel. <br><br>
+
+    <p><br>
+        <br>
+
+    </p>
+
+    <h1 class="western"><a name="6. Teljesítmény|outline"></a>6.
+        Teljesítmény</h1>
+
+	
+	
+	
+    <p>
+        <font face="Arial, sans-serif">Performance</font>
+    </p>
+
+    <p>A rendszertől elvárt teljesítmény mutatók:</p>
+		
+		
+
+    <ul>
+
+        <li>
+            <p>A játékban minden funkció egy belső óra szerint fog futni, ami 60-szor frissít másodpercenként(60ups).
+				Ez alapján 16.6ms-os válaszidő lesz az elvárható a programtól, ami megfelelő gyorsaságot fog biztosítani a játék futtatásához.</p>
+
+        </li>
+        <li>
+            <p>A programnak az előforrásigénye alacsony lesz. Előre láthatóan Intel® Core™ i3-3225 vagy jobb processzor,4gb memória, gtx 650 videókártya,2gb szabad tárhely szükséges a program futtatásához.<br>
+			Előreláthatóan minden mai modern számítógépen megfelelően fog tudni futni, hogy minnél nagyobb réteg számára elérhető legyen.</p>
+
+        </li>
+    </ul>
+
+   <h1 class="western"><a name="7. Támogatottság|outline"></a>7.
+        Támogatottság</h1>
+
+    <p>
+        <font face="Arial, sans-serif">Supportability</font>
+    </p>
+
+    <p>A játék tesztüzeme után is felmerülhetnek, előre be nem látható hibák.</p>
+	<p>Ezeknek az orvoslását mihamarabb el kell végezniük a játék fejleszőinek.</p>
+	<p>A programot teljes mértékben, az előre megadott kódolási szabványok szerint kell megírni, hogy könnyíteni tudjuk a felmerülő hibák javítását és korrigálását.</p>
+	<p>Az alap betűtípus az UTF-8 és a ISO-8859-2, az egyik a szoftver angol nyelve, a másik a magyar nyelv támogatottsága miatt szükséges.</p>
+	<p>A változók és a funkciók neveinek kezdőbetűje kicsi, ha több szóból áll akkor egybe írjuk és annak a kezdőbetűje már nagy.</p>
+	<p>A variánsok neveinek minden esetben angolnak és könnyen értelmezhetőnek kell lenniük. Utalniuk kell a funkció vagy változó tulajdonságára/viselkedésére/működésére.</p>
+	<p>Példa egy változóra: int myInteger, és egy pedig funkció definiálására: void myBeautifulFuncion().</p>
+	<p>A funkció inicializálásakor ügyelni kell a záró és nyitójelek megfelelő használatára. A nyitó és zárójeleknek mindig egymás alatt kell lennie, az átláthatóság miatt.</p>
+	<p>A konvenciók során fontos az átláthatóság és ezért a tagok között mindig kell szóközt tenni. Például: "int osszeg = szam1 + szam2;"</p>
+	<br>
+	<p>A karbantartóknak szükségesek lesznek olyan funkciók amikkel hozzáférhetnek a játékosok online tárolt adataihoz, hogy esetleges hibák és glitchek miatt vissza tudják állítani az adatokat.</p>
+	<p>A játékosoknak viszont szükség lesz olyan funkcióra ahol jeleneteni tudják az általuk észlelt hibákat, esetleg visszajelzéseket tudjanak küldeni bizonyos dolgokról a játékban. </p>
+	<p>Erre a funkcióra a program működése során nagy hangsúlyt kell fektetni, mivel a visszajelzések alapján tudják majd a fejlesztők finomhangolni a játékot és javítani azokat a hibákat amiket a teszt során nem fedeztek fel.</p>
+	<p>Az összes visszajelzést és hibajelentést naplózni kell, amit könnyen elérhetővé kell tenni a fejlesztők számára, tehát egy adatbázisba kell tárolni őket.</p>
+	<p>Az adatbázis értékeinek lekérdezéséhez külön programot kell írni ami csak a karbantartók és a fejlesztők számára elérhető. A külső program segítségével hozzáférhetők lesznek a rekordok.</p>
+
+    <p><br>
+        <br>
+
+    </p>
+
+    <h1 class="western"><a name="8. Tervezési korlátozások|outline"></a>8.
+        Tervezési korlátozások</h1>
+
+
+    <h2>Harmadik féltől származó programok konkretizálása:</h2>
+    <ul>
+        <li>Eclipse IDE 4.25</li>
+        <li>JAVA JDK 18</li>
+        <li>Notepad++ 8.4.5</li>
+        <li>Aseprite v1.3</li>
+        <li>BeepBox</li>
+    </ul>
+
+    <h2>Fejlesztési módszertan: Obejektum Orientált Alapelvek</h2>
+    <p>Az objektumorientált programozást támogató nyelvek tipikusan öröklődéssel támogatják az újrahasznosítást osztályok vagy prototípusok formájában. Az osztályokat használók két alapfogalmat vezettek be:</p>
+    <ul>
+        <li>Osztályok: az adatformátum és az elérhető metódusok definíciója az adott típus vagy a típushoz tartozó objektumok számára. Az osztályok is tartalmazhatnak adattagokat<br>
+        és metódusokat, amelyek műveleteket végeznek az osztály adattagjain. Összetartozó adatok és függvények, eljárások egysége.</li>
+        <li>Objektumok: az osztály példányai.</li>
+    </ul>
+
+    <p>Az objektumok gyakran megfeleltethetők a való élet objektumainak vagy egyedeinek. Például egy rajzolóprogram tartalmazhat olyan objektumokat, mint kör, négyzet vagy menü. Egy online<br>
+    áruházban lehetnek olyan objektumok, mint bevásárlókosár, vásárló és termék. Néha az objektumok absztraktabb entitásoknak felelnek meg, például egy megnyitott fájlnak; vagy egy objektum,<br>
+    ami mértékegységek között vált át. </p>
+
+    <p>Az objektumok valamelyik osztály példányai. Például, egy objektum, aminek név mezője "Mary", lehet az Employee (Alkalmazott) osztály példánya. A függvényeket és eljárásokat az objektumorientált<br>
+    programozásban metódusoknak nevezik, a változókat adattagnak, attribútumnak, mezőnek vagy tulajdonságnak. Az objektumorientált programozás bevezeti a következő kifejezéseket: </p>
+
+    <ul>
+        <li>Osztályváltozók: az osztályhoz tartoznak, elérhetők az osztályon, de példányokon keresztül is. Minden példány számára ugyanaz.</li>
+        <li>Példányváltozók vagy attribútumok: az egyedi objektumok jellemzői, minden objektumnak sajátja van.</li>
+        <li>Tagváltozók: az osztály- és a példányváltozók együttese, amik egy osztályban vannak definiálva.</li>
+        <li>Osztálymetódusok: osztály szintű metódusok, csak az osztályváltozókhoz és paramétereikhez férhetnek hozzá, példányváltozókhoz nem.</li>
+        <li>Példánymetódusok: példány szintű metódusok, hozzáférnek az adott példány összes adatához és metódusához, és paramétereik is lehetnek.</li>
+    </ul>
+
+    <p>Az objektumok hozzáférhetők változókként, de belső szerkezetük van. Absztrakciós szintet adnak, ami elválatsztja a belső és a külső kódot. A külső kód az objektum kliense, ami kérheti<br>
+    bizonyos metódusok végrehajtását az objektumtól, írhatja, olvashatja annak változóit. Sok nyelvben a példányokat közvetve, pointerekkel kezelik; maga az objektum a heapen vagy a stacken van. </p>
+
+    <p>Az objektumokat az osztályban definiált speciális metódus, konstruktor hozza létre. A program több példányt is létrehozhat egy osztályból, amelyek egymástól függetlenül működnek; így a<br>
+    program ugyanazokat a műveleteket végezheti különböző adathalmazokon. </p>
+
+    <p>Az osztályokat használó objektumorientált programozást osztály alapú programozásnak is nevezik, míg a prototípus alapú programozásban nincsenek osztályok. Emiatt analóg, de szignifikánsan<br>
+    különböző terminológiát használnak az objektum és példány definiálására. </p>
+
+    <h2>Sűrűn újrafelhasznált objektumok:</h2>
+    Minden játékon belüli objektum ami interaktálni fog bármivel is a <b>gameObject</b> objektumból fog leszármazni. Ez fog minden komponenst összefoglalni és tartalmazni ami például egy ellenfélnek szüksége van.<br>
+    Nincsenek alapból metódusai.<br><br>
+
+    Az egyik legfontosabb objektumunk a <b>Transform</b> objektum, melynek a célja a gameObjectek-nek egy poziciót adni a 2D környezetben.<br>
+    Publikus Metódusuai:
+    <ul>
+        <li><b>TransformDirection</b> - Local Space Direction  koordináta World Space Direction koordinátába</li>
+        <li><b>InverseTransformDirection</b> - World Space Direction koordináta Local Space Direction koordinátába</li>
+        <li><b>TransformPoint</b> - Local Space Point  koordináta World Space Point koordinátába</li>
+        <li><b>InverseTransformPoint</b> - World Space Point  koordináta Local Space Point koordinátába</li>
+        <li><b>LookAt</b> - Elforgatja az irány vektort a megadott World Space Point koordinátába</li>
+        <li><b>Rotate</b> - Elforgatja az irány vektort a megadott x, y értékkel</li>
+        <li><b>RotateAround</b> - Egy megadott World Space Point körül elforgatja a Transform World Space Point-ját a megadott értékkel</li>
+        <li><b>Translate</b> - Elmozdítja a Transform World Space Point -ját a megadott irányba a megadott értékkel</li>
+    </ul>
+
+    Az gameObject -ek megjelenítésére a <b>Sprite</b> objektumot fogjuk használni.<br>
+    Publikus Metódusai:
+    <ul>
+        <li><b>SetSprite</b> - Beállitja hogy melyik képet jelenitse meg.</li>
+        <li><b>SetScale</b> - Beállítja hogy milyen arányban növelje vagy csökkentse a kép méretét.</li>
+        <li><b>SetFiltering</b> - Beállítja milyen kompressziós algoritmust használjon a hely spórolásához.</li>
+        <li><b>IsShowing</b> - Beállítja hogy megjelnitse-e a Spriteot</li>
+        <li><b>SetOverrideColor</b> - A beállított képehez addittívan hozzáad egy színt.</li>
+    </ul>
+
+    A gameObjectek fizikai interakcióját a <b>Physics2D</b> objektum fogja kezelni.<br>
+    Publikus Metódusai nincsenek, a konstruktor fog kezelni minden beállításra szükséges feladatot, így játék futása alatt nincs lehetőség a fizikai tulajdonságok megváltoztatására.<br>
+    A létrehozásnál beállítható tulajdonságok: <b>Alap gravitáció szorzó, Objektum súlya, Surlódási faktor és hogy prioritazált-e az objektum</b>. A prioritizálás alatt azt kell érteni hogy több kalkulációt fog elvégezni mint egy normál fizikai objektum.
+
+    <h1 class="western"><a name="9. Felhasznált kész komponensek|outline"></a>
+        9. Felhasznált kész komponensek</h1>
+
+    A fejlesztési költség minimalizálása érdekében nem tervezünk olyan külsös könyvtárat használni ami pénzbe kerülne, viszont használatba fogjuk venni a Java áltatl biztosított <b>Swing</b> könyvtárat ami ingyenesen<br>
+    felhasználható a JAVA JDK 18 használatával. Ezt a könyvtárat fogjuk használni a játék megjelenítésére.<br><br><br>
+    <b>Swing</b>
+    <p>Swing egy GUI eszköz a JAVA -hoz. Része a JAVA alap objektumoknak - egy API -nak ami egy grafikus felhasználói felületet biztosít a JAVA felhasználóknak.<br>
+    Swing -et azért fejlesztették ki hogy egy kifinomultabb GUI megjenítést biztosítson a fejlesztők számára. Swing szimulálja a jól ismert platformok kezelási érzését, aminek a testreszabását a fejleszőkre hadja.<br>
+    Alapból tartalmaz ismerős elemeket, mint buttons, check boxes és label. Ezeken felül segít az alapvető funkciókban mint az ablakváltás, görgetés, táblák, listák hogy a fejlesztőknek ne kelljen foglalkozni vele.<br>
+    Platformfüggetlen kód alapján fut, így biztositva a későbbi portolásokat, ha arra kerülne sor.</p>
+
+    <h1 class="western"><a name="10. Interfészek|outline"></a>11.
+        Interfészek</h1>
+
+    <p>
+        <font face="Arial, sans-serif">Interfaces</font>
+    </p>
+
+    <p>Ebben a fejezetben kell specifikálni a rendszer valamennyi külső
+        kapcsolatát, az ezt biztosító interfészeket.</p>
+
+    <p><br>
+        <br>
+
+    </p>
+
+    <h2 class="western">10.1. Felhasználói interfészek</h2>
+
+    <p>
+        <font face="Arial, sans-serif">User Interfaces</font>
+    </p>
+
+    <p>Ebben az alpontban kell leírni a felhasználói interfészre
+        vonatkozó követelményeket. Ilyenek lehetnek például:</p>
+
+    <ul>
+
+        <li>
+            <p>használandó szabvány vagy kvázi-szabvány, stílus,</p>
+
+        </li>
+        <li>
+            <p>a különböző felhasználói csoportok (munkakör, gyakorlottság
+                stb. szerint) elvárásai,</p>
+
+        </li>
+        <li>
+            <p>a leglényegesebb user interface elemek tervei.</p>
+
+        </li>
+	    
+    </ul>
+	A felhasználói interfész tervezése közben nem konkrét szabványt használtunk, csupán tapasztalataink, illtve általános tippek felhasználásával alkottuk meg saját szabványunkat. <br>
+	Minden ablaknak, amit a játék nyit meg, rendelkezni kell egy címsávval, mely tartalmazza az ablak nevét, valamint lehetőséget az ablak bezárására. <br>
+	Az ablakok elhelyezésénél nagyon fontos, hogy megfelelő helyen legyenek, ahol a játékos könnyen látja őket. Minden általános ablak a képernyő közepe felett, valahol a kijelző felsőharmadában, hiszen az ergonómia szabályai szerint a felhasználó szemének mindig a monitor tetejével egyvonlban kell lennie, így természetesen a képernyő közeléhez tendáló elhelyezkedésű ablakok kényelmesebbek a szem számára. Ez alól kivételek az olyan ablakok, amelyek valamilyen játékbeli tárggyal való interakció következtében jelnnek meg, hiszen az egyértelműség érdekében fontos, hogy az ablak az azt kiváltó tárgyközelében jelenjen meg. <br>
+	Fontos, hogy a játék során, illetve a menüben interaktolható objektumok feltűnőek, valamint jól olvashatóak. A játékon belüli megjelenő szövegek betűtípusa a fontspace.com-on megtalálható ingyenesen felhasználható Public Pixel font lesz, míg a szövegek színe általában fehér lesz, de ez természetesen változhat, ha a játék környezet azt indokolja a könnyebb olvashatóság érdekében.<br>
+	A játék saját, rajzolt kurzorra fogja lecserélni az eredetit.<br>
+	A szabvány kijelenti, hogy az esetleges hibaüzeneteknek mindig egyértelműnek kell lennie kortól és származástól függetlenül. AZ üzenetnek egyértelműen le kell írnia a probléma típusát, forrását, és hogy a felhasználó hogyan tudja korrigálni az adott problémát.<br>
+	A szoftver csupán egyetlen felhasználó csoporttal fog rendelkezni, ami nem más, mint maga a játékos.<br><br>
+
+    <p><br>
+        <br>
+
+    </p>
+
+    <h2 class="western">10.2. Hardware interfészek</h2>
+
+    <p>
+        <font face="Arial, sans-serif">Hardware Interfaces</font>
+    </p>
+
+    <p>Ha vannak a rendszerben speciális kezelendő hardware elemek.</p>
+	Játékunkban Hardware interfészekre, csupán a Kontroller támogatás megvalósításához lesz szükségünk, amit pedig az egyszeűbb megvalósítás érdekében modulként fogunk implementálni.<br><br>
+
+    <p><br>
+        <br>
+
+    </p>
+
+    <h2 class="western">10.3. Software interfészek</h2>
+
+    <p>
+        <font face="Arial, sans-serif">Software Interfaces</font>
+    </p>
+
+    <p>Mivel a Steam áruházon keresztül lesz forgalmazva a játék, ezért a Steamworks API-ra szükség lesz. Ez C++ alapú, de más nyelvekkel kompatibilis. 
+	Az API-al kihasználható minden a Steam által nyújtott lehetőség, például achievmentek elérése.</p>
+
+    <p><br>
+        <br>
+
+    </p>
+
+    <h2 class="western">10.4. Kommunikációs interfészek</h2>
+
+    <p>
+        <font face="Arial, sans-serif">Communications Interfaces</font>
+    </p>
+
+    <p>Bár a játékban nem lesz online funkció, a Steam miatt a (Steam) Web API-t használni kell.</p>
+
+    <p><br>
+        <br>
+
+    </p>
+
+    <h1 class="western"><a name="11. Alkalmazott szabványok|outline"></a>12.
+        Alkalmazott szabványok</h1>
+
+    <p>
+        Mivel szeretnénk a játékunkat fejleszthetővé tenni, ezért az egészet Java nyelven írjuk meg. A szoftver két szabványt fog előtérbe helyezni, amivel a hosszútávon dolgozni fogunk és ezek által folyamatosan Up to date tud maradni a játékunk a konkurenciával szemben. A két alkalmazandó szabványunk az OOP és az MVVM lesz ezáltal.
+	<br>	
+		<p><b>MVVM (Model View ViewModel):</b>
+			A Model View ViewModel másnéven, Model View Present (MVP) fejlesztési szabványt fogunk a játékunkhoz implementálni.
+		</p>
+		<ul>
+			<li><b>Mit nevezünk Model-nek?</b>
+			A Modelünk azok az adatok lesznek amikhez a játékosunknak nem lesz semmilyen hozzáférése, ilyen például a játékunkra vonatkozó szabályok. Ilyen szabály például a gravitáció.
+			</li>
+			<li><b>Mi a ViewModel?</b>
+			Ezek lesznek a játékunk fő interfacei. Ide mentődnek azok az adatok amikkel a játékos majd interakcióba tud lépni. Ilyen interfacek például a játékos tárhelyének megtekintése, vagy a térkép megtekintése vagy akár a karakter státuszának megtekintése.	
+			</li>
+			<li><b>Végül pedig mi a View?</b>
+			Itt fog hozzáférést kapni a játékos az adatokhoz amiket előkészítettünk neki a ViewModelben. Ezzel a hozzáféréssel nem kell újra létrehozni interfaceket, hivatkozhatunk már meglévőekre is.
+			Például a játékosunk meg akarja tekinteni a térképet, akkor ugyan azt a térképet betölthetjük neki nagyban, kicsiben, vagy csak részletben.
+			</li>
+		</ul>
+		<p><b>OOP (Objektum-Orientált Programozás):</b>
+			A programunk megírása során azért döntöttünk egy Objektum-Orientált Programozási nyelv mellett (ami jelen esetben a Java), mert szeretnénk, ha a kódunk letisztult és könnyen átlátható legyen.
+			Emellett a haszna, hogy egyszerre többen dolgozhatunk a kódon és nem kell megvárni amíg a másik feljesztő befejezi az ő munkáját. A kód karbantartása is nagyban javul mivel, az OOP nyelvnek köszönhetően a módosítást vagy új elemek beiktatása rendkívül egyszerűvé válik.
+			A biztonságra is nagy hangsúlyt fektetünk a megfelelő adatrejtéssel és absztrakt osztályok bevezetésével, ezáltal a felhasználó annyi adathoz fér hozzá amennyit és úgy ahogy mi megengedünk neki.
+			Problémamegoldás segítése, az OOP alapelveinek hála a nagyobb komplexebb problémákat kisebbekre bonthatjuk és gyorsabban hatékonyabban nyúlhatunk hozzájuk.
+		</p>
+		<p><b>Kód formázása:</b>
+			A kódot alapvetően UTF-8 kódolásba írjuk meg, mert mindenhol ez az elfogadott szabvány. A main fájlunk felépítésébe, először feltüntetjük a lincenszt és egyéb információkat, aztán a packageket, majd az importokat.
+			A változók létrehozásánál nem kell ügyelni a függőleges igazításhoz, mivel az eltolásnál könnyen belezavarodhatunk a szóközökkel. A változók neveinek mindig lényegretörőnek kell lenniük. Ilyen, hogy int a; nem megengedett.
+			Kommenteknél a megszokott /* */ jelölést használjuk, vagy ha csak egy sorhoz szeretnénk megjegyzést tenni akkor a // jelölést kell használni.
+			A long változóknál a végén az L suffixet soha nem kisbetűvel írjuk, hogy elkerüljük az összetévesztését az 1-es számmal. Például 1000L és nem 1000l.
+			Az elnevezéseknél az osztályokat UpperCamelCase módszerrel nevezzük el, tehát a több szóból álló osztálynévnél minden szó nagybetűvel kezdődik. Például: GameMainEngine.
+			A metódusok neveihez pedig lowerCamelCase-t használunk, aminél hasonlóan az előzőhöz, ha több szóból áll egy metódusnév akkor az elsőt kisbetűvel, a többit naggyal írjuk. Például: myFirstMethod.
+			A paraméterek, változók és a nem konstans változók neveihez mind a lowerCamelCase-t használjuk. A konstansok neveit pedig mindenhol nagybetűvel írjuk, például (static final int MAX = 5).	
+		</p>
+    </p>
+
+    <h1 class="western"><a name="13. Mellékletek|outline"></a>13.
+        Mellékletek</h1>
+        <ul>
+            <li>MTBF - <a href="https://en.wikipedia.org/wiki/Mean_time_between_failures">Mean time between failures</a> </li>
+            <li>MTTR - <a href="https://en.wikipedia.org/wiki/Mean_time_to_repair">Mean time to repair</a></li>
+            <li>UTF-8 -Az UTF-8 (8-bit Unicode Transformation Format, 8 bites Unicode átalakítási formátum) változó hosszúságú Unicode karakterkódolási eljárás, melyet Rob Pike és Ken Thompson alkotott meg. </li>
+        </ul>
+
+
+
+
+</body>
+
+</html>

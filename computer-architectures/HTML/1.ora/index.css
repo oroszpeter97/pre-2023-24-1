@@ -1,0 +1,29 @@
+body{
+    background-color: lightslategray;
+}
+
+td, th, table{
+    border-width: 3px;
+    border-color: darkslategrey;
+    border-style: double;
+}
+
+#inner_table{
+    border: 1px solid darkred;
+}
+
+.inner_row, .inner_data{
+    border: 1px solid darkred;
+}
+
+a{
+    color: red;
+}
+
+a:visited{
+    color: blue;
+}
+
+a:hover{
+    cursor: none;
+}
